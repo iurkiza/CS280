@@ -187,6 +187,7 @@ class ObjectAllocator
 
   private:
     // Some "suggested" members (only a suggestion!)
+    unsigned char* navigator;
     GenericObject * PageList_;                      // the beginning of the list of pages
     GenericObject * FreeList_;                      // the beginning of the list of objects
     void            allocate_new_page(void);        // allocates another page of objects
